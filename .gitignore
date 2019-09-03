@@ -2,5 +2,4 @@
 .vscode/
 
 # general ignores
-dist/
 node_modules/
