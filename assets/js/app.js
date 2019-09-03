@@ -8,12 +8,12 @@ app.config(["$stateProvider", "$urlRouterProvider", "$locationProvider", functio
 	//state configuration
 	$stateProvider.state('about', {
 		url: '/about',
-		templateUrl : '/templates/about/about-layout.html',
+		templateUrl : 'templates/about/about-layout.html',
 		controller : 'aboutController',
 		cache: false,
 		resolve : {
 			loadCtrl : ["$ocLazyLoad", function($ocLazyLoad) {
-				return $ocLazyLoad.load('/templates/about/controller.js');
+				return $ocLazyLoad.load('templates/about/controller.js');
 			}]
 		}
 	}).state('project', {
@@ -152,36 +152,36 @@ app.factory('webServices', ["$http",
 function($http) {
 	//fetch top header
 	this.fetchTopHeader = function() {
-		var promise = $http.get("/json_services/v1/top_header.json");
+		var promise = $http.get("json_services/v1/top_header.json");
 		return promise;
 	};
 
 	//fetch about me
 	this.fetchAboutMe = function() {
-		var promise = $http.get("/json_services/v1/about_me.json");
+		var promise = $http.get("json_services/v1/about_me.json");
 		return promise;
 	};
 
 	//fetch resume
 	this.fetchResume = function() {
-		var promise = $http.get("/json_services/v1/resume.json");
+		var promise = $http.get("json_services/v1/resume.json");
 		return promise;
 	};
 
 	//fetch projects
 	this.fetchProjects = function() {
-		var promise = $http.get("/json_services/v1/projects.json");
+		var promise = $http.get("json_services/v1/projects.json");
 		return promise;
 	};
 
 	//fetch projects
 	this.fetchBlogs = function() {
-		var promise = $http.get("/json_services/v1/blogs.json");
+		var promise = $http.get("json_services/v1/blogs.json");
 		return promise;
 	};
 	
 	this.fetchApps = function() {
-		var promise = $http.get("/json_services/v1/apps.json");
+		var promise = $http.get("json_services/v1/apps.json");
 		return promise;
 	};
 
