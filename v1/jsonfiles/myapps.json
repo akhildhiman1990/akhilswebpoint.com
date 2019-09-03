@@ -1,0 +1,8 @@
+[
+    {
+        "id": "myweatherapp",
+        "heading": "My Weather App",
+        "onclick": "window.open('myapps/myweatherapp/');",
+        "style": "border-top:2px solid white!important;border-bottom:2px solid white!important;"
+    }
+]

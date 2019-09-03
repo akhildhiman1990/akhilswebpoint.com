@@ -1,0 +1,9 @@
+[
+    {
+        "id": "workedatmiri",
+        "heading": "Miri Infotech Pvt Ltd.",
+		"class":"ulsidebarall",
+        "onclick": "window.open('http://www.miritech.com')",
+        "style": "border-top:2px solid white!important;border-bottom:2px solid white!important;"
+    }
+]

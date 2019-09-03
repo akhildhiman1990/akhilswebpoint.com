@@ -1,0 +1,102 @@
+{
+	"projects": [
+		{
+			"title": "Proton/Proton2",
+			"clientURL": "https://www.basware.com/",
+			"natureOfProject": "Style Library",
+			"technologyUsed": ["JavaScript", "HTML", "jQuery", "less", "scss", "NodeJS", "AngularJS", "Angular2"],
+			"description": "Proton is a set of tools for implementing the Basware common look and feel, Nucleus. Proton consists of Style libraries that offer UI components for developing new features in a consistent way Live style guide that contains guidelines on how to use the style libraries and examples on how to use the UI components.",
+			"modulesWorked": []
+		},
+		{
+			"title": "Timeline",
+			"clientURL": "http://releases.basware.com/",
+			"natureOfProject": "Releases Timeline",
+			"technologyUsed": ["JavaScript", "HTML", "jQuery", "less", "NodeJS", "Angular2", "Bootstrap", "python"],
+			"description": "Timeline is the webpage provide by Basware to its clients. This page consist of versioning history by monthly releases. It also contains filtering functionality by category, related items etc",
+			"modulesWorked": []
+		},
+		{
+			"title": "Groupchat 4.0",
+			"clientURL": "https://www.hobsons.com/",
+			"natureOfProject": "Web Application",
+			"technologyUsed": ["JavaScript", "HTML", "jQuery", "CSS/CSS3", "XML"],
+			"description": "EMT Group and Instant Chat tools let students form relationships around common topics before they even get to campus. Instant Chatting with students allows them to ask personalized questions from an admissions representative in real time, Connect immediately with visitors to your Web site, Post future chat dates in one convenient place on your site, and use other e-mail, direct mail, and messaging tools in the EMT suite to draw chatters.",
+			"modulesWorked": []
+		}, {
+			"title": "Rapid Transit",
+			"clientURL": "http://www.zakharymallettbart.com/",
+			"natureOfProject": "Web Application",
+			"technologyUsed": ["JavaScript", "HTML", "jQuery", "CSS/CSS3", "Google Maps"],
+			"description": "A rapid transit system is a public transport system in an urban area with high capacity, high frequency not needing timetables, is fast and is segregated from other traffic. This Product helps in finding the closest station from the address you are departing, and provide you the route of the address you are arriving and also gives all the traing with there scheduled time from departure station to arrival station.",
+			"modulesWorked": []
+		}, {
+			"title": "Lyfeline",
+			"natureOfProject": "Mobile Application",
+			"clientURL": "https://itunes.apple.com/in/app/lyfeline-milestones-baby-development/id992791747?mt=8",
+			"technologyUsed": ["JavaScript", "HTML/HTML5", "jQuery", "CSS/CSS3", "jQuery Mobile", "Cordova", "JSON"],
+			"description": "Early detect strengths and delays, track, and improve your child's development. See your child’s future and influence it. LyfeLine’s Milestones app helps you understand where your child is today and equips you with tools to create a better tomorrow. Parenting is a group activity. Include your significant other, grandparents, family, and other caretakers in the experience!",
+			"modulesWorked": []
+		}, {
+			"title": "Oodles Dashboard",
+			"clientURL": "https://itunes.apple.com/us/app/oodles/id998299608?mt=8",
+			"natureOfProject": "Mobile Application",
+			"technologyUsed": ["Swift"],
+			"description": "Oodles Technologies daily status app allows you to send your daily task report to your project lead. This is an easy and simple way to keep a track of your progress. The app just doesn't keep a daily log of activity and work, but it also allows you to register queries and other project related issues. This application is developed in native iOS Platform in Swift.",
+			"modulesWorked": []
+		}, {
+			"title": "Samepinchh",
+			"clientURL": "https://itunes.apple.com/us/app/samepinchh-friends-friendship/id1016175099?ls=1&mt=8",
+			"natureOfProject": "Mobile Application",
+			"technologyUsed": ["Swift"],
+			"description": "SamePinchh is a free and a smart new platform, which helps you do just that . Sensible way to discover people around or a fun among friend circle by matching wavelength based on your own distinct taste for doing things together in fashion , food , travel , movie and music. It’s all about friendship, love and everything in between!",
+			"modulesWorked": []
+		}, {
+			"title": "Provider App(Medocity M.D.) / Patient App(iCancerHealth)",
+			"clientURL": "https://patient.medocity.com/",
+			"natureOfProject": "Web Application",
+			"technologyUsed": ["HTML/HTML5", "jQuery", "CSS/CSS3", "JSON", "JavaScript", "Angular JS", "Node JS "],
+			"description": "Medocity provides a virtual coordinated care platform that bridges the gap between the clinic and the patient’s home. This is accomplished by managing the patient’s care utilizing a proprietary, interactive and rules-based solution designed to engage patients, optimize their journey, improve quality of care, and effectively reduce avoidable healthcare costs in the system. Medocity provide a variety of innovative and interactive tools to enrich and extend quality patient care beyond office visits, improve its coordination by addressing patient’s needs at home, and ensure seamless communication between the healthcare team and patients.",
+			"modulesWorked": []
+		}, {
+			"title": "Enrollment Management Technology",
+			"clientURL": "https://www.hobsons.com/",
+			"natureOfProject": "Web Application",
+			"technologyUsed": ["JavaScript", "HTML", "CSS/CSS3", "XML"],
+			"description": "It’s a web based CRM product developed for education professionals in high schools,colleges, universities. This products help students along the entire education lifecycle. EMT, has Web-based tools that help colleges manage student recruitment, enrollment, and retention. This includes tools like CRM, online applications, social networking, and more that colleges use to keep students engaged.",
+			"modulesWorked": [
+				{
+					"label": "EMT Interest Page",
+					"description": "EMT Interest is a dynamic product used by universities to gather all the information from the students in extremely quick time. It was an ASP.NET, XSLT, Javascript and XML based product."
+				}, {
+					"label": "EMT Answer Page",
+					"description": "EMT Answer is a dynamic online FAQ system that answers students’ questions instantly and builds a continually evolving answer content database as more students use it. It was totally an asynchronous product based on AJAX. Answer is branded for institution, and comes with a library of more than 90 frequently asked admission and enrollment questions, getting answers to students quickly and consistently while reducing staff workload. Reporting features show results on question frequency and timing, so you can adjust your responses based on student needs."
+				}, {
+					"label": "EMT Landing Page",
+					"description": ""
+				}, {
+					"label": "EMT VIP Page",
+					"description": ""
+				}
+			]
+		}, {
+			"title": "Time Forge",
+			"clientURL": "https://itunes.apple.com/us/app/timeforge-manager/id602542660?mt=8",
+			"natureOfProject": "Mobile Application",
+			"technologyUsed": ["JavaScript", "HTML/HTML5", "jQuery", "CSS/CSS3", "jQuery Mobile", "Cordova", "JSON"],
+			"description": "TimeForge is a labor management software that helps an corporation to keep the employees in loop. Manager can assign shifts for their employee in web application. The employees then can view their shifts into mobile application and employees can Confirm/GiveUp their shifts from mobile application.",
+			"modulesWorked": [
+				{
+					"label": "TimeForge Manager",
+					"description": "TimeForge Manager application is developed for manager. Manager can login and can view its employee schedule, Shifts swaps request of employees, Manager can view their own schedule, attendance entries. They can manage attendance entries of employees. To view sales and reports and keep logs etc."
+				}, {
+					"label": "TimeForge Employee",
+					"description": "TimeForge Employee application if free application developed for employees. Employee need to view their shifts and they need to confirm or give up their shifts. Also, with the use of this application employee can view other employees shifts, can view any available shifts for pick up, View status of their request and can ClockIn/ ClockOut for their shifts."
+				}, {
+					"label": "Time Clock",
+					"description": "TimeClock app needs manager credentials to login. This app helps manager to manage attendance entries of his employees. This apps helps manager to ClockIn/ClockOut their employees for their shifts or they can put employees of break etc. "
+				}
+			]
+		}
+	]
+}

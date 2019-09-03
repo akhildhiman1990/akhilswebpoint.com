@@ -1,0 +1,18 @@
+{
+    "apps": {
+        "text": "Apps",
+        "noteText": "Note: ",
+        "data": [
+            {
+                "title": "Weather App",
+                "link": "apps/weatherapp/",
+                "note": "Api used in this application is paid now. So user wont be able to search any info."
+            },
+            {
+                "title": "Railway App",
+                "link": "apps/train/",
+                "note": "Api used in this application is paid now. So user wont be able to search any info."
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+<div class="mobile-menu-items theme-background" ng-hide="!openResponsiveMenu">
+	<a href="#" id="closeResponsiveMenu" class="cross-button" close-hover-menu flag="openResponsiveMenu"></a>
+	<div class="responsive-menu-list-wrapper">
+		<nav>
+			<ul class="responsive-menu-list">
+				<li ng-repeat="item in topHeaderData.menuItems" class="load-data" close-responsive-menu flag="openResponsiveMenu" locpath="item.path">
+					<div>
+						<i class="fa" ng-class="item.class"></i><span><a href="#{{item.path}}" class="anchor-color-top">{{item.label}}</a></span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<div class="top-nav">
+	<ul class="top-nav-socials">
+		<li>
+			<a href="{{topHeaderData.socialLinks.fb}}" class="social-icons fa fa-facebook" target="_blank"></a>
+		</li>
+		<li>
+			<a href="{{topHeaderData.socialLinks.twitter}}" class="social-icons fa fa-twitter" target="_blank"></a>
+		</li>
+		<li>
+			<a href="{{topHeaderData.socialLinks.insta}}" class="social-icons fa fa-instagram" target="_blank"></a>
+		</li>
+		<li>
+			<a href="{{topHeaderData.socialLinks.linkedIn}}" class="social-icons fa fa-linkedin" target="_blank"></a>
+		</li>
+		<li>
+			<a href="{{topHeaderData.socialLinks.googlePlus}}" class="social-icons fa fa-google-plus" target="_blank"></a>
+		</li>
+	</ul>
+	<div class="top-nav-avatar">
+		<div class="load-data">
+			<div>
+				<img src="{{topHeaderData.imagePath}}" alt="" class="top-avatar">
+			</div>
+		</div>
+		<h2>{{topHeaderData.name}}</h2>
+		<p>
+			{{topHeaderData.designation}}
+		</p>
+	</div>
+	<span class="mobile-menu" responsive-menu flag="openResponsiveMenu"></span>
+	<div class="left-side closeMobileMenu">
+		<nav>
+			<ul class="menu-list">
+				<li ng-repeat="item in topHeaderData.menuItems" class="load-data" ng-click="openUrlPage(item.path)">
+					<div>
+						<i class="fa" ng-class="item.class"></i><span><a href="#{{item.path}}" class="anchor-color-top">{{item.label}}</a></span>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>

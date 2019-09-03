@@ -1,0 +1,31 @@
+{
+	"name": "Akhil Dhiman",
+	"designation": "Front End UI Developer",
+	"imagePath": "assets/images/thumb_main_img.jpg",
+	"menuItems": [
+		{
+			"label": "About",
+			"path": "about",
+			"class": "fa-user"
+		}, {
+			"label": "Resume",
+			"path": "resume",
+			"class": "fa-image"
+		}, {
+			"label": "Projects",
+			"path": "project",
+			"class": "fa-briefcase"
+		}, {
+			"label": "Apps",
+			"path": "apps",
+			"class": "fa-th-large"
+		}
+	],
+	"socialLinks": {
+		"fb": "https://www.facebook.com/akhildhiman1990",
+		"twitter": "https://twitter.com/akhildhiman1990",
+		"linkedIn": "http://www.linkedin.com/in/akhildhiman1990",
+		"googlePlus": "https://plus.google.com/111233373556408343704/posts",
+		"insta":"https://www.instagram.com/its_a_dhiman/"
+	}
+}

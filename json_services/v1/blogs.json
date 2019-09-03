@@ -1,0 +1,53 @@
+{
+	"blogs": {
+		"text": "Blogs",
+		"data": [
+			{
+				"title": "NameSpaces In JavaScript",
+				"link": "http://www.oodlestechnologies.com/blogs/NameSpaces-In-JavaScript"
+			}, {
+				"title": "Steps to know the version of the application in PhoneGap",
+				"link": "http://www.oodlestechnologies.com/blogs/Steps-to-know-the-version-of-the-application-in-PhoneGap"
+			}, {
+				"title": "Steps to get App info in Phonegap",
+				"link": "http://www.oodlestechnologies.com/blogs/Steps-to-get-App-info-in-Phonegap"
+			}, {
+				"title": "Browse Photo gallery in Swift",
+				"link": "http://www.oodlestechnologies.com/blogs/Browse-Photo-gallery-in-Swift"
+			}, {
+				"title": "Open another application from your application in cordova",
+				"link": "http://www.oodlestechnologies.com/blogs/Open-another-application-from-your-application-in-cordova"
+			}, {
+				"title": "Create Ripple animation in swift",
+				"link": "http://www.oodlestechnologies.com/blogs/Create-Ripple-animation-in-swift"
+			}, {
+				"title": "File Handling In cordova Using Cordova File Plugin",
+				"link": "http://www.oodlestechnologies.com/blogs/File-Handling-In-cordova-Using-Cordova-File-Plugin"
+			}, {
+				"title": "iOS status Bar in phonegap",
+				"link": "http://www.oodlestechnologies.com/blogs/iOS-status-Bar-in-phonegap"
+			}, {
+				"title": "Track Your Mobile Using Cordova",
+				"link": "http://www.oodlestechnologies.com/blogs/Track-Your-Mobile-Using-Cordova"
+			}, {
+				"title": "Implementing i18n (internationalization) in PhoneGap or Cordova Application",
+				"link": "http://www.oodlestechnologies.com/blogs/Implementing-i18n-%28internationalization%29-in-PhoneGap-or-Cordova-Application"
+			}, {
+				"title": "How to allow vibration on notifications using Cordova",
+				"link": "http://www.oodlestechnologies.com/blogs/How-to-allow-vibration-on-notifications-using-Cordova"
+			}, {
+				"title": "Code Organization In Phonegap",
+				"link": "http://www.oodlestechnologies.com/blogs/Code-Organization-In-Phonegap"
+			}, {
+				"title": "Steps to show Toast on application (PhoneGap)",
+				"link": "http://www.oodlestechnologies.com/blogs/Steps-to-show-Toast-on-application-%28-PhoneGap%29"
+			}, {
+				"title": "How to Setup Weinre in PhoneGap",
+				"link": "http://www.oodlestechnologies.com/blogs/How-to-Setup-Weinre-in-PhoneGap"
+			}, {
+				"title": "Handling Bad and Faulty Network",
+				"link": "http://www.oodlestechnologies.com/blogs/Handling-Bad-and-Faulty-Network"
+			}
+		]
+	}
+}

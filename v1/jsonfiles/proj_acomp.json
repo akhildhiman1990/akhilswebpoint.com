@@ -1,0 +1,17 @@
+[
+    {
+        "id": "Groupchat",
+        "heading": "Groupchat 4.0",
+        "onclick": "window.location.href = 'projects.php';"
+    },
+    {
+        "id": "EducationCRM",
+        "heading": "Education CRM",
+        "onclick": "window.location.href = 'projects.php';"
+    },
+	{
+        "id": "Rapid-Transit",
+        "heading": "Rapid Transit",
+        "onclick": "window.location.href = 'projects.php';"
+    }
+]

@@ -1,0 +1,259 @@
+<div class="pos-rel">
+	<div class="sky sky-wrapper" make-full-screen-bg>
+		<div class="moon"></div>
+		<div class="clouds_one"></div>
+		<div class="clouds_two"></div>
+		<div class="clouds_three"></div>
+	</div>
+	<div class="pos-abs app-container" ng-init="init()">
+		<div class="col-md-12 p-0 m-b-15">
+			<div class="col-md-4">
+				<div class="panel panel-white">
+					<div class="location-container min-h-topsec">
+						<div class="form-group">
+							<input type="text" class="form-control" ng-model="searchCity" data-container="body" data-animation="am-flip-x" bs-options="address as address.name for address in fetchCity($viewValue)" placeholder="Enter Location" bs-typeahead data-prefix-event="fetch-weather" />
+						</div>
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.forecast.flag, 'alert-danger': !flagsServices.forecast.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.forecast.text}}
+						</div>
+						<div ng-if="forecastSelCity.response.version">
+							<div>
+								<span><strong>Selected Location: </strong></span><span>{{forecastSelCity.current_observation.display_location.city}}<span ng-if="forecastSelCity.current_observation.display_location.state">,</span> {{forecastSelCity.current_observation.display_location.state}}</span>
+							</div>
+							<div>
+								<span><strong>Country: </strong></span>
+								<span title="{{forecastSelCity.current_observation.display_location.country}}">
+								    <img src="http://www.countryflags.io/{{forecastSelCity.current_observation.display_location.country}}/flat/16.png">
+								</span>
+							</div>
+							<div>
+								<span><strong>Lat Long: </strong></span><span>{{forecastSelCity.current_observation.display_location.latitude}}, {{forecastSelCity.current_observation.display_location.longitude}}</span>
+							</div>
+							<div>
+								<span><strong>Elevation: </strong></span><span>{{forecastSelCity.current_observation.observation_location.elevation}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 panel-white">
+				<div class="panel panel-white">
+					<div class="min-h-topsec p-10-15">
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.forecast.flag, 'alert-danger': !flagsServices.forecast.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.forecast.text}}
+						</div>
+						<div ng-if="forecastSelCity.response.version">
+							<div class="pull-left">
+								<img ng-src="http://icons.wxug.com/i/c/k/{{forecastSelCity.current_observation.icon}}.gif" onerror="this.src = '/assets/icons/sunny.gif'" />
+							</div>
+							<div class="pull-left weather-info-wrapper">
+								<div class="details-section-wrapper">
+									<span><strong>Current Temperature is: </strong></span><span>{{forecastSelCity.current_observation.temperature_string}}</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Feels Like: </strong></span><span>{{forecastSelCity.current_observation.feelslike_string}}</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Dew Point: </strong></span><span>{{forecastSelCity.current_observation.dewpoint_string}}</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Humidity: </strong></span><span>{{forecastSelCity.current_observation.relative_humidity}}</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Visibility: </strong></span><span>{{forecastSelCity.current_observation.visibility_mi}} mi/{{forecastSelCity.current_observation.visibility_km}} km</span>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="col-md-4 panel-white">
+				<div class="panel panel-white">
+					<div class="min-h-topsec p-10-15">
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.forecast.flag, 'alert-danger': !flagsServices.forecast.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.forecast.text}}
+						</div>
+						<div ng-if="forecastSelCity.response.version">
+							<div class="details-section-wrapper">
+								<span><strong>Wind: </strong></span><span>{{forecastSelCity.current_observation.wind_mph}} mph/{{forecastSelCity.current_observation.wind_kph}} kmh</span><span><i> ({{forecastSelCity.current_observation.wind_string}})</i></span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>UV Index: </strong></span><span>{{forecastSelCity.current_observation.UV}}</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Weather Type: </strong></span><span>{{forecastSelCity.current_observation.weather}}</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Last updated on: </strong></span><span>{{forecastSelCity.current_observation.observation_time}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 m-b-15">
+			<div class="panel panel-white">
+				<div class="min-more-h-topsec p-10-15">
+					<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.hourly.flag, 'alert-danger': !flagsServices.hourly.flag}" ng-if="!forecastSelCity.response.version">
+						{{flagsServices.hourly.text}}
+					</div>
+					<div class="history-forecast" ng-if="hourlyForecast.hourly_forecast.length">
+						<div>
+							<span><strong>Next 36 Hours Weather</strong></span>
+						</div>
+						<hr class="seperator-hr" />
+						<flex-slider slide="item in hourlyForecast.hourly_forecast track by $index" slideshow="false" animation="slide" control-nav="false" pause-play="false"  prev-text="" next-text="" item-width="300px;">
+						    <li>
+						        <div class="flex-slider-item-wrapper">
+						        	<div>
+							        	<img ng-src="http://icons.wxug.com/i/c/k/{{item.icon}}.gif" onerror="this.src = '/assets/icons/sunny.gif'" />
+							        </div>
+							        <div>
+										<div class="details-section-wrapper">
+											<span><strong>Temperature: </strong></span><span>{{item.temp.english}} F ({{item.temp.metric}} C)</span>
+										</div>
+										<div class="details-section-wrapper">
+											<span><strong>Feels Like: </strong></span><span>{{item.feelslike.english}} F ({{item.feelslike.metric}} C)</span>
+										</div>
+										<div class="details-section-wrapper">
+											<span><strong>Dew Point: </strong></span><span>{{item.dewpoint.english}} F ({{item.dewpoint.metric}} C)</span>
+										</div>
+										<div class="details-section-wrapper">
+											<span><strong>Humidity: </strong></span><span>{{item.humidity}}</span>
+										</div>
+										<div class="details-section-wrapper">
+											<span><strong>Weather Conditions: </strong></span><span>{{item.condition}}</span>
+										</div>
+										<div class="details-section-wrapper">
+											<span>
+												<i>{{item.FCTTIME.pretty}}</i>
+											</span>
+										</div>
+									</div>
+						        </div>
+						    </li>
+						</flex-slider>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12 p-0">
+			<div class="col-md-4">
+				<div class="panel panel-white p-b-20">
+					<div class="min-h-topsec p-10-15">
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.trips.flag, 'alert-danger': !flagsServices.trips.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.trips.text}}
+						</div>
+						<div ng-if="tripPlanner.response.features.planner">
+							<div>
+								<span><strong>{{tripPlanner.trip.title}}</strong></span>
+							</div>
+							<hr class="seperator-hr" />
+							<div>
+								<div class="details-section-wrapper">
+									<span><strong>Avg High Temp: </strong></span><span>{{tripPlanner.trip.temp_high.avg.F}} F ({{tripPlanner.trip.temp_high.avg.C}} C)</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Avg Low Temp: </strong></span><span>{{tripPlanner.trip.temp_low.avg.F}} F ({{tripPlanner.trip.temp_low.avg.C}} C)</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Avg High Dew point: </strong></span><span>{{tripPlanner.trip.dewpoint_high.avg.F}} F ({{tripPlanner.trip.dewpoint_high.avg.C}} C)</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Avg Low Dew point: </strong></span><span>{{tripPlanner.trip.dewpoint_low.avg.F}} F ({{tripPlanner.trip.dewpoint_low.avg.C}} C)</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Cloud Cover: </strong></span><span>{{tripPlanner.trip.cloud_cover.cond}}</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Precipitation Temp: </strong></span><span>{{tripPlanner.trip.precip.avg.F}} F ({{tripPlanner.trip.precip.avg.C}} C)</span>
+								</div>
+								<div class="details-section-wrapper">
+									<span><strong>Airport Code: </strong></span><span>{{tripPlanner.trip.airport_code}}</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-white">
+					<div class="min-h-topsec p-10-15">
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.trips.flag, 'alert-danger': !flagsServices.trips.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.trips.text}}
+						</div>
+						<div ng-if="tripPlanner.response.features.planner">
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.tempoversixty.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.tempoversixty.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceoffogday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceoffogday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofpartlycloudyday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofpartlycloudyday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofsunnycloudyday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofsunnycloudyday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofhumidday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofhumidday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.tempoverfreezing.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.tempoverfreezing.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofcloudyday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofcloudyday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofprecip.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofprecip.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofrainday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofrainday.percentage}} %</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="panel panel-white">
+					<div class="min-h-topsec p-10-15">
+						<div class="alert alert-dismissible" ng-class="{'alert-info': flagsServices.trips.flag, 'alert-danger': !flagsServices.trips.flag}" ng-if="!forecastSelCity.response.version">
+							{{flagsServices.trips.text}}
+						</div>
+						<div ng-if="tripPlanner.response.features.planner">
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofsultryday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofsultryday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.tempoverninety.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.tempoverninety.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofthunderday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofthunderday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofsnowonground.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofsnowonground.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceoftornadoday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceoftornadoday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofwindyday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofwindyday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.tempbelowfreezing.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.tempbelowfreezing.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofhailday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofhailday.percentage}} %</span>
+							</div>
+							<div class="details-section-wrapper">
+								<span><strong>Chances of {{tripPlanner.trip.chance_of.chanceofsnowday.name}} Temp: </strong></span><span>{{tripPlanner.trip.chance_of.chanceofsnowday.percentage}} %</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

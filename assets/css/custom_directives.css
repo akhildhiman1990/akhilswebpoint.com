@@ -1,0 +1,42 @@
+.slider-outer-div {
+	height: 3px;
+	background-color: #eee;
+	margin: 20px 0px;
+}
+
+.slider-border-attr {
+	border-style: solid;
+	border-width: 1px;
+}
+
+.circle-percentage {
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	margin-top: -4px;
+}
+
+/* Default view */
+.view {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	transition: 600ms;
+}
+
+.view.ng-enter {
+	top: 100%;
+}
+
+.view.ng-enter.ng-enter-active {
+	top: 0%;
+}
+
+.view.ng-leave {
+	top: 0%;
+}
+
+.view.ng-leave.ng-leave-active {
+	top: 100%;
+}

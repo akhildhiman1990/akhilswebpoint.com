@@ -1,0 +1,94 @@
+{
+	"education": {
+		"text": "Education",
+		"data": [
+			{
+				"stream": "Computer Science Engineering",
+				"DegreeType": "Bachelor Of Technology",
+				"duration": "2008 - 2012",
+				"description": "B.TECH in Computer Science Engineering from Ramgarhia Institute of Engineering & Technology Phagwara Punjab 2012."
+			}, {
+				"stream": "Higher Secondary",
+				"DegreeType": "Student",
+				"duration": "2006 - 2008",
+				"description": "Higher Secondary(10+2) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2008."
+			}, {
+				"stream": "Senior Secondary",
+				"DegreeType": "Student",
+				"duration": "2006",
+				"description": "Senior Secondary(10th) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2006."
+			}
+		]
+	},
+	"workExperience": {
+		"text": "Work Experience",
+		"location": "Location: ",
+		"data": [
+			{
+				"organizationName": "Basware India Pvt Ltd",
+				"designation": "Associate Lead Software Engineer",
+				"location": "Chandigarh",
+				"duration": "Jan 2017 - Till Date",
+				"description": "Basware is a global leader in providing networked purchase-to-pay solutions, e-invoicing and innovative financing services. With Basware, small and large companies around the world achieve significant cost savings, more flexible payment terms, greater efficiencies and closer relationships with their suppliers",
+				"website": "http://www.basware.com/"
+			}, {
+				"organizationName": "Medocity Inc",
+				"designation": "Senior Developer",
+				"location": "Gurgaon",
+				"duration": "Jul 2015 - Dec 2016",
+				"description": "Medocity’s mission is to provide a virtual coordinated care platform that bridges the gap between the clinic & the patient’s home. This is accomplished by managing the patient’s supportive care utilizing interactive and rule-based mobile solutions, and by effectively reducing avoidable healthcare costs in the system. We provide a variety of innovative and interactive tools to enrich and extend quality patient care beyond office visits, improve its coordination by addressing patients’ needs at home, and ensure seamless communication between the healthcare team and patients.",
+				"website": "http://www.medocity.com/"
+			}, {
+				"organizationName": "Miri Infotech Pvt. Ltd.",
+				"designation": "Software Engineer",
+				"location": "New Delhi",
+				"duration": "Oct 2012 - May 2014",
+				"description": "Miri Technologies Inc. an ISO certified software consulting firm, with enduring proficiency in providing Software Development, Web Application Development, Website Design, Embedded System Development and Customized Software Application Development stands proud to say that Quality is our essence. Miri Infotech was founded in the year 2003, and its corporate head office is in Fremont, California, U.S., with branch offices in New Delhi and Mohali. The offshore and the onsite team works with coordination for the company’s development.",
+				"website": "http://www.miritech.com/"
+			}
+		]
+	},
+	"skills": {
+		"text": "Skills",
+		"data": [
+			{
+				"name": "JavaScript",
+				"percentage": 90
+			}, {
+				"name": "CSS/CSS3",
+				"percentage": 80
+			}, {
+				"name": "less/scss",
+				"percentage": 70
+			}, {
+				"name": "HTML/HTML5",
+				"percentage": 80
+			}, {
+				"name": "jQuery",
+				"percentage": 95
+			}, {
+				"name": "AngularJS",
+				"percentage": 90
+			},
+			{
+				"name": "Angular 8",
+				"percentage": 85
+			}, {
+				"name": "TypeScript",
+				"percentage": 75
+			}, {
+				"name": "Node JS",
+				"percentage": 70
+			}, {
+				"name": "Cordova",
+				"percentage": 95
+			}, {
+				"name": "Swift",
+				"percentage": 65
+			}, {
+				"name": "Underscore",
+				"percentage": 80
+			}
+		]
+	}
+}

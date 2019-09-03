@@ -1,0 +1,42 @@
+<div class="row">
+	<div class="right-side">
+		<section class="project-wrapper left-side-container" ng-repeat="project in allProjects">
+			<div class="col-md-6 slide-top">
+				<div class="main-section-page project-div" detect-description-height="$index">
+					<div class="info-content">
+						<h3 class="title global-main-title"> {{project.title}} </h3>
+						<div class="cards-text-data">
+							<p>
+								<span><strong>Application URL: </strong></span><span><a href="{{project.clientURL}}" target="_blank">Click Here</a></span>
+							</p>
+							<p>
+								<span><strong>Nature Of Project: </strong></span><span>{{project.natureOfProject}}</span>
+							</p>
+							<p>
+								<span><strong>Technology Used: </strong></span><span>{{project.technologyUsed.join(', ')}}</span>
+							</p>
+							<p>
+								<span><strong>Description: </strong></span><span>{{project.description}}</span>
+							</p>
+							<p>
+								<div ng-if="project.modulesWorked.length">
+									<strong>Modules Worked</strong>
+								</div>
+								<ol>
+									<li ng-repeat="module in project.modulesWorked">
+										<div>
+											<strong>{{module.label}}</strong>
+										</div>
+										<div>
+											{{module.description}}
+										</div>
+									</li>
+								</ol>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

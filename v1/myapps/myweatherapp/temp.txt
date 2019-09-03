@@ -1,0 +1,126 @@
+{
+    "response": {
+        "version": "0.1",
+        "termsofService": "http://www.wunderground.com/weather/api/d/terms.html",
+        "features": {
+            "geolookup": 1,
+            "conditions": 1
+        }
+    },
+    "location": {
+        "type": "INTLCITY",
+        "country": "IN",
+        "country_iso3166": "IN",
+        "country_name": "India",
+        "state": "",
+        "city": "Jalandhar",
+        "tz_short": "IST",
+        "tz_long": "Asia/Kolkata",
+        "lat": "31.32555580",
+        "lon": "75.57917023",
+        "zip": "00000",
+        "magic": "11",
+        "wmo": "42075",
+        "l": "/q/zmw:00000.11.42075",
+        "requesturl": "global/stations/42075.html",
+        "wuiurl": "http://www.wunderground.com/global/stations/42075.html",
+        "nearby_weather_stations": {
+            "airport": {
+                "station": [
+                    {
+                        "city": "Amritsar",
+                        "state": "",
+                        "country": "IN",
+                        "icao": "VIAR",
+                        "lat": "31.62999916",
+                        "lon": "74.87000275"
+                    }
+                ]
+            },
+            "pws": {
+                "station": []
+            }
+        }
+    },
+    "current_observation": {
+        "image": {
+            "url": "http://icons-ak.wxug.com/graphics/wu2/logo_130x80.png",
+            "title": "Weather Underground",
+            "link": "http://www.wunderground.com"
+        },
+        "display_location": {
+            "full": "Jalandhar, India",
+            "city": "Jalandhar",
+            "state": "",
+            "state_name": "India",
+            "country": "IN",
+            "country_iso3166": "IN",
+            "zip": "00000",
+            "latitude": "31.32555580",
+            "longitude": "75.57917023",
+            "elevation": "243.00000000"
+        },
+        "observation_location": {
+            "full": "Amritsar, ",
+            "city": "Amritsar",
+            "state": "",
+            "country": "IN",
+            "country_iso3166": "IN",
+            "latitude": "31.62999916",
+            "longitude": "74.87000275",
+            "elevation": "768 ft"
+        },
+        "estimated": {},
+        "station_id": "VIAR",
+        "observation_time": "Last Updated on April 17, 4:00 PM IST",
+        "observation_time_rfc822": "Wed, 17 Apr 2013 16:00:00 +0530",
+        "observation_epoch": "1366194600",
+        "local_time_rfc822": "Wed, 17 Apr 2013 18:06:27 +0530",
+        "local_epoch": "1366202187",
+        "local_tz_short": "IST",
+        "local_tz_long": "Asia/Kolkata",
+        "local_tz_offset": "+0530",
+        "weather": "Clear",
+        "temperature_string": "93 F (34 C)",
+        "temp_f": 93,
+        "temp_c": 34,
+        "relative_humidity": "21%",
+        "wind_string": "From the WNW at 12 MPH",
+        "wind_dir": "WNW",
+        "wind_degrees": 300,
+        "wind_mph": 12,
+        "wind_gust_mph": 0,
+        "wind_kph": 18,
+        "wind_gust_kph": 0,
+        "pressure_mb": "1002",
+        "pressure_in": "29.59",
+        "pressure_trend": "-",
+        "dewpoint_string": "48 F (9 C)",
+        "dewpoint_f": 48,
+        "dewpoint_c": 9,
+        "heat_index_string": "NA",
+        "heat_index_f": "NA",
+        "heat_index_c": "NA",
+        "windchill_string": "NA",
+        "windchill_f": "NA",
+        "windchill_c": "NA",
+        "feelslike_string": "93 F (34 C)",
+        "feelslike_f": "93",
+        "feelslike_c": "34",
+        "visibility_mi": "3.7",
+        "visibility_km": "6.0",
+        "solarradiation": "",
+        "UV": "-1",
+        "precip_1hr_string": "-9999.00 in (-9999.00 mm)",
+        "precip_1hr_in": "-9999.00",
+        "precip_1hr_metric": "-9999.00",
+        "precip_today_string": "0.00 in (0.0 mm)",
+        "precip_today_in": "0.00",
+        "precip_today_metric": "0.0",
+        "icon": "clear",
+        "icon_url": "http://icons-ak.wxug.com/i/c/k/clear.gif",
+        "forecast_url": "http://www.wunderground.com/global/stations/42075.html",
+        "history_url": "http://www.wunderground.com/history/airport/VIAR/2013/4/17/DailyHistory.html",
+        "ob_url": "http://www.wunderground.com/cgi-bin/findweather/getForecast?query=31.62999916,74.87000275"
+    }
+}

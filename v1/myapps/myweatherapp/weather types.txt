@@ -1,0 +1,18 @@
+
+Overcast.... 1 hour or less sunshine recorded for the day
+
+Cloudy.... 3 hours or less sunshine
+
+Mostly Cloudy.... 3-5 hours of sunshine
+
+Partly Cloudy..... 5-7 hours of sunshine
+
+Mostly Sunny..... over 7 hours of sunshine
+
+Clear....... no more
+
+sunny
+http://www.maxmind.com/en/home
+
+
+Read more: http://www.city-data.com/forum/weather/1673340-definition-overcast-clear-partly-cloudy-etc.html#ixzz2Qj2T3Rod

@@ -1,0 +1,91 @@
+html, body {
+	height: 100%;
+	font-family: 'Good Foot';
+}
+
+body {
+  	margin: 0;
+  	background-color: #FA8072;
+}
+
+.flex-container {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.names {
+	font-size: 70px;
+}
+  
+#heart {
+	position: relative;
+	width: 100px;
+	height: 90px;
+	animation: heartbeat 1s infinite;
+	margin:0 10px;
+}
+#heart:before,
+#heart:after {
+	position: absolute;
+	content: "";
+	left: 50px;
+	top: 0;
+	width: 50px;
+	height: 80px;
+	background: #ff0000;
+	border-radius: 50px 50px 0 0;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+}
+#heart:after {
+	left: 0;
+	transform: rotate(45deg);
+	transform-origin :100% 100%;
+}
+  
+@keyframes heartbeat
+{
+	0%
+	{
+	  transform: scale( .75 );
+	}
+	20%
+	{
+	  transform: scale( 1 );
+	}
+	40%
+	{
+	  transform: scale( .75 );
+	}
+	60%
+	{
+	  transform: scale( 1 );
+	}
+	80%
+	{
+	  transform: scale( .75 );
+	}
+	100%
+	{
+	  transform: scale( .75 );
+	}
+}
+
+.names-wrapper,
+.caption {
+	display: flex;
+	justify-content: center;
+}
+
+.caption {
+	font-size: 60px;
+}
+
+.flip-clock-wrapper {
+	display: flex;
+    justify-content: center;
+}

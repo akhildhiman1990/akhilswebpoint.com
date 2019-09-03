@@ -1,0 +1,19 @@
+<div class="row">
+	<div class="right-side">
+		<section class="left-side-container">
+			<div class="col-md-12 slide-top">
+				<div class="main-section-page">
+					<h1 class="title primary-font global-main-title">{{appsData.apps.text}}</h1>
+					<div class="info-content" ng-repeat="app in appsData.apps.data">
+						<h3 class="title float-left"> {{app.title}} </h3>
+						<button class="primary float-right shadow-none" ng-click="openAppsInOtherTab(app.link)">
+							Click here to view app
+						</button>
+						<div class="clearfix"></div>
+						<div ng-if="app.note"><strong>{{appsData.apps.noteText}}</strong><em>{{app.note}}</em></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "Facebookli",
+        "heading": "Facebook",
+        "onclick": "window.open('https://www.facebook.com/dhimanakhil1990');"
+    },
+    {
+        "id": "LinkedInli",
+        "heading": "LinkedIn",
+        "onclick": "window.open('http://www.linkedin.com/pub/akhil-dhiman/78/780/59b');"
+    },
+	{
+        "id": "Google+li",
+        "heading": "Google+",
+        "onclick": "window.open('https://plus.google.com/111233373556408343704/posts');"
+    },
+	{
+        "id": "Twitterli",
+        "heading": "Twitter",
+        "onclick": "window.open('https://twitter.com/akhildhiman1990');"
+    },
+	{
+        "id": "PersonalE-mailli",
+        "heading": "Personal E-mail",
+        "onclick": "window.location.href = 'links.php';"
+    }
+]

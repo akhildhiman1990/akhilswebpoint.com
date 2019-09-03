@@ -1,0 +1,35 @@
+{
+	"label": "About Me",
+	"imageURL": "https://scontent-sin1-1.xx.fbcdn.net/v/t1.0-9/13221008_2004432443115926_2374681025335967472_n.jpg?oh=87c6b87f12dadc7b6a9c0af4edda849e&oe=57F03975",
+	"aboutMeText": "More than 5+ Years in the IT industry spanning over domains like Education CRM, Rapid Transit, Labor Maintainance, Dating, Childcare, Healthcare etc. Having Expertise knowledge of JavaScript, Object Oriented JavaScript for client side scripting. Experience on working with both products and service based Web development projects using AngularJS, jQuery, JavaScript, AJAX, JSON, DHTML, PHP, CSS. Having a strong understanding of the life cycle of system/software project development. I have extensively worked on web development technologies like AngularJS, jQuery, jQueryMobile, MySQL, PHP, JavaScript, Object Oriented JavaScript, HTML 4/5, DHTML, XHTML, CSS 2/3, AJAX, JSON and XML. My specialization manis in web Application and Mobile Application Development.",
+	"rightCards": [
+		{
+			"label": "Goals",
+			"description": "To be a part of the challenging team which strives for the better growth of the organization and which explores my potential and provides me with the opportunity to enhance my talent with an intention to be an asset to the company."
+		}, {
+			"label": "Hobbies",
+			"description": "I am passionate to Develop/Design and Build amazing new things. Love to Learn New Technologies. Have lot of Interest on New Computer/Mobile Gadget. Much Interest in News and Cricket. Love to Play Pool in Free Time."
+		}
+	],
+	"contactInfo": [
+		{
+			"label": "Name",
+			"text": "Akhil Dhiman"
+		}, {
+			"label": "Born",
+			"text": "Nov 12, 1990"
+		}, {
+			"label": "Email",
+			"text": "akhildhiman1990@gmail.com"
+		}, {
+			"label": "Present Address",
+			"text": "Chandigarh, India"
+		}, {
+			"label": "Home",
+			"text": "Jalandhar, Pb, India"
+		}, {
+			"label": "Phone",
+			"text": "+91 99535 98926"
+		}
+	]
+}
