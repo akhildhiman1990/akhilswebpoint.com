@@ -3,11 +3,11 @@ var app = angular.module('angularTestApp', ['ngRoute', 'oc.lazyLoad', 'mgcrea.ng
 app.config(["$routeProvider", "$locationProvider", function($routeProvider, $locationProvider) {
 	//route configuration
 	$routeProvider.when('/home', {
-		templateUrl : 'apps/weatherapp/templates/home/layout.html',
+		templateUrl : './templates/home/layout.html',
 		controller : 'homeController',
 		resolve : {
 			loadCtrl : ['$ocLazyLoad', function($ocLazyLoad) {
-				return $ocLazyLoad.load('apps/weatherapp/templates/home/controller.js');
+				return $ocLazyLoad.load('./templates/home/controller.js');
 			}]
 		}
 	}).otherwise({
