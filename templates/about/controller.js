@@ -7,14 +7,14 @@ angular.module('portfolioApp', ['angular-flexslider']).controller('aboutControll
     
     //flexslider data
     $scope.flexsliderItems = [
-        {id:1, img:'/assets/images/image1.JPG'},
-        {id:2, img:'/assets/images/image2.jpg'},
-        {id:3, img:'/assets/images/image3.jpg'},
-        {id:4, img:'/assets/images/image4.JPG'},
+        {id:1, img:'assets/images/image1.JPG'},
+        {id:2, img:'assets/images/image2.jpg'},
+        {id:3, img:'assets/images/image3.jpg'},
+        {id:4, img:'assets/images/image4.JPG'},
     ];
 
     //download resume
     $scope.downloadResume = function(){
-        window.open("/assets/docs/akhildhiman.pdf", "_blank");
+        window.open("assets/docs/akhildhiman.pdf", "_blank");
     };
 }]);
