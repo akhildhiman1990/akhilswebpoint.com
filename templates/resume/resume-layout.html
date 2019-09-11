@@ -5,7 +5,7 @@
 				<div class="main-section-page">
 					<h1 class="title primary-font global-main-title">{{resumeData.workExperience.text}}</h1>
 					<div class="info-content" ng-repeat="work in resumeData.workExperience.data">
-						<h3 class="title">{{work.organizationName}}</h3>
+						<h3 class="title website-link" ng-click="openWorkWebsite(work.website)">{{work.organizationName}}</h3>
 						<h4 class="second-title">{{work.designation}}
 						<br>
 						{{work.duration}}</h4>
@@ -21,7 +21,7 @@
 				<div class="main-section-page">
 					<h1 class="title primary-font global-main-title">{{resumeData.education.text}}</h1>
 					<div class="info-content" ng-repeat="education in resumeData.education.data">
-						<h3 class="title">{{education.stream}}</h3>
+						<h3 class="title website-link" ng-click="openWorkWebsite(education.website)">{{education.stream}}</h3>
 						<h4 class="second-title">{{education.DegreeType}}
 						<br>
 						{{education.duration}}</h4>

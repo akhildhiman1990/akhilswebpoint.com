@@ -42,6 +42,15 @@
 	display: inline-block;
 }
 
+.info-content > .website-link {
+	cursor: pointer;
+	display: inline-block;
+}
+
+.info-content > .website-link:hover {
+	text-decoration: underline;
+}
+
 .info-content:last-child {
 	border-bottom: none;
 }

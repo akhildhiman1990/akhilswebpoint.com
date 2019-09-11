@@ -6,17 +6,20 @@
 				"stream": "Computer Science Engineering",
 				"DegreeType": "Bachelor Of Technology",
 				"duration": "2008 - 2012",
-				"description": "B.TECH in Computer Science Engineering from Ramgarhia Institute of Engineering & Technology Phagwara Punjab 2012."
+				"description": "B.TECH in Computer Science Engineering from Ramgarhia Institute of Engineering & Technology Phagwara Punjab 2012.",
+				"website": "http://www.riet.ac.in"
 			}, {
 				"stream": "Higher Secondary",
 				"DegreeType": "Student",
 				"duration": "2006 - 2008",
-				"description": "Higher Secondary(10+2) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2008."
+				"description": "Higher Secondary(10+2) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2008.",
+				"website": "http://dmsdayanandnagar.org/"
 			}, {
 				"stream": "Senior Secondary",
 				"DegreeType": "Student",
 				"duration": "2006",
-				"description": "Senior Secondary(10th) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2006."
+				"description": "Senior Secondary(10th) from Dayanand Model School Jalandhar affiliated to Central Board of Secondary Education 2006.",
+				"website": "http://dmsjalandhar.org/"
 			}
 		]
 	},

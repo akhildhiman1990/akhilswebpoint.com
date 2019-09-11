@@ -1,8 +1,12 @@
-angular.module('portfolioApp').controller('resumeController', ["$rootScope", "$scope", "webServices",
-function($rootScope, $scope, webServices) {
+angular.module('portfolioApp').controller('resumeController', ["$rootScope", "$scope", "webServices", "$window",
+function($rootScope, $scope, webServices, $window) { 
 	webServices.fetchResume().then(function(resp) {
 		$scope.resumeData = resp.data;
 	});
+	
+	$scope.openWorkWebsite = function(path) {
+		$window.open(path, "_blank");
+	}
 }]).directive('sliderTechnology', ['$timeout', '$rootScope',
 function($timeout, $rootScope) {
 	return {
