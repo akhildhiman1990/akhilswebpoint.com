@@ -38,13 +38,6 @@
 			"description": "Early detect strengths and delays, track, and improve your child's development. See your child’s future and influence it. LyfeLine’s Milestones app helps you understand where your child is today and equips you with tools to create a better tomorrow. Parenting is a group activity. Include your significant other, grandparents, family, and other caretakers in the experience!",
 			"modulesWorked": []
 		}, {
-			"title": "Oodles Dashboard",
-			"clientURL": "https://itunes.apple.com/us/app/oodles/id998299608?mt=8",
-			"natureOfProject": "Mobile Application",
-			"technologyUsed": ["Swift"],
-			"description": "Oodles Technologies daily status app allows you to send your daily task report to your project lead. This is an easy and simple way to keep a track of your progress. The app just doesn't keep a daily log of activity and work, but it also allows you to register queries and other project related issues. This application is developed in native iOS Platform in Swift.",
-			"modulesWorked": []
-		}, {
 			"title": "Samepinchh",
 			"clientURL": "https://itunes.apple.com/us/app/samepinchh-friends-friendship/id1016175099?ls=1&mt=8",
 			"natureOfProject": "Mobile Application",
