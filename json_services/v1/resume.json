@@ -28,10 +28,17 @@
 		"location": "Location: ",
 		"data": [
 			{
+				"organizationName": "CatalystOne Solutions",
+				"designation": "Senior Software Developer",
+				"location": "Mohali",
+				"duration": "Oct 2019 - Till date",
+				"description": "CatalystOne's cloud-based HR software suite will elevate your HR and management teams to a whole new level. Our solution has been designed to streamline key processes for medium and large organisations across the Nordics and beyond.",
+				"website": "https://www.catalystone.com/"
+			}, {
 				"organizationName": "Basware India Pvt Ltd",
 				"designation": "Associate Lead Software Engineer",
 				"location": "Chandigarh",
-				"duration": "Jan 2017 - Till Date",
+				"duration": "Jan 2017 - Oct 2019",
 				"description": "Basware is a global leader in providing networked purchase-to-pay solutions, e-invoicing and innovative financing services. With Basware, small and large companies around the world achieve significant cost savings, more flexible payment terms, greater efficiencies and closer relationships with their suppliers",
 				"website": "http://www.basware.com/"
 			}, {
@@ -72,8 +79,7 @@
 			}, {
 				"name": "AngularJS",
 				"percentage": 90
-			},
-			{
+			}, {
 				"name": "Angular 8",
 				"percentage": 85
 			}, {
