@@ -28,10 +28,17 @@
 		"location": "Location: ",
 		"data": [
 			{
-				"organizationName": "CatalystOne Solutions",
+				"organizationName": "MSB Digital Pvt Ltd",
+				"designation": "Senior Software Engineer",
+				"location": "Chandigarh",
+				"duration": "Aug 2020 - Till Date",
+				"description": "MSB is a cloud-based digital workflow and eSigning solution that allows complete automation and control over key aspects of your paper-based document processes. MSB also features shareable document template libraries, flexible retention periods, long-term storage options and integration with existing management systems. MSB will help you lower costs, improve ROI and maximize business growth.",
+				"website": "https://www.msbdocs.com/"
+			}, {
+				"organizationName": "CatalystOne Info Solutions Pvt Ltd",
 				"designation": "Senior Software Developer",
 				"location": "Mohali",
-				"duration": "Oct 2019 - Till date",
+				"duration": "Oct 2019 - Aug 2020",
 				"description": "CatalystOne's cloud-based HR software suite will elevate your HR and management teams to a whole new level. Our solution has been designed to streamline key processes for medium and large organisations across the Nordics and beyond.",
 				"website": "https://www.catalystone.com/"
 			}, {
